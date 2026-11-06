@@ -1,0 +1,8 @@
+node_modules/
+.next/
+out/
+.env*
+deck.zip
+deck_extract/
+contact-sheet.jpg
+BharatBin_Ministry_Deck_v5.pptx
