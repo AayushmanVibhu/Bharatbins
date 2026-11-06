@@ -1,9 +1,12 @@
-import { CtaBand, PageHero } from "@/components/PageParts";
+import { ArrowUpRight, Mail } from "lucide-react";
+import { PageHero } from "@/components/PageParts";
+import { foundation } from "@/data/content";
 
-export const metadata = { title: "Our Team" };
-export default function Team() { return <>
-  <PageHero eyebrow="Our team" title="People who keep the work moving." intro="Help India Foundation is presented here through the leadership information verified in the BharatBin programme material." />
-  <section className="profile"><div className="profile-monogram" aria-hidden="true">RL</div><div><p className="eyebrow">Leadership</p><h2>Mr. Rajeev Lochan</h2><h3>Co-Founder, Help India Foundation</h3><p>Mr. Rajeev Lochan is identified in the foundation’s BharatBin proposal as Co-Founder and the principal foundation contact. A verified individual portrait and additional biographical details will be added when supplied.</p><a className="text-link" href="mailto:helpindiafoundation026@gmail.com">Contact the foundation</a></div></section>
-  <section className="team-note"><p className="eyebrow light">Growing the page responsibly</p><h2>Every person shown here will be verified.</h2><p>The team structure is ready to expand as confirmed names, roles, biographies and photographs become available. We do not use fictional profiles or substitute portraits.</p></section>
-  <CtaBand />
-  </>; }
+export const metadata = { title: "Our Team", description: "Leadership at Help India Foundation.", alternates: { canonical: "/team" }, openGraph: { title: "Our Team | Help India Foundation", description: "Leadership at Help India Foundation.", url: "/team" } };
+export default function Team() {
+  return <>
+    <PageHero eyebrow="Our team" title="Leadership grounded in public purpose." intro="Help India Foundation brings together community participation, institutional collaboration and practical programme development." />
+    <section className="leadership"><div className="leadership-intro"><p className="eyebrow">Leadership</p><p>The foundation’s leadership supports programme direction, relationships and the coordination needed to move community-focused ideas into action.</p></div><article className="leader-card"><span className="leader-index">01</span><div><h2>{foundation.leader}</h2><p className="leader-role">{foundation.role}</p><p>Working across the foundation’s social-development priorities and the coordination of its BharatBin waste-management initiative.</p><a className="text-link" href={`mailto:${foundation.email}`}>Contact through the foundation <Mail size={18} /><ArrowUpRight size={16} /></a></div></article></section>
+    <section className="leadership-values"><p className="eyebrow light">The work behind the work</p><div><h2>Progress depends on people who listen, coordinate and follow through.</h2><p>We welcome conversations with individuals and institutions who can contribute local insight, technical knowledge, volunteer time or long-term collaboration.</p></div></section>
+  </>;
+}

@@ -1,3 +1,5 @@
+export const siteUrl = "https://aayushmanvibhu.github.io/Bharatbins";
+
 export const foundation = {
   name: "Help India Foundation",
   tagline: "Empowering People · Enriching Lives · Building a Better India",
@@ -5,19 +7,23 @@ export const foundation = {
   phone: "+91 98114 86711",
   leader: "Mr. Rajeev Lochan",
   role: "Co-Founder, Help India Foundation",
-  vision:
-    "A future where communities across India have greater access to opportunity, a cleaner environment and the resources to participate in sustainable development.",
-  mission:
-    "We advance practical work in education, training, employment generation, environmental protection and waste management, with communities involved at every stage.",
+  vision: "Communities across India with wider access to opportunity, cleaner surroundings and a meaningful role in sustainable development.",
+  mission: "To advance education, training, employment generation, environmental protection and responsible waste management through practical, community-centred work.",
 };
 
 export const focusAreas = [
-  { title: "Education & training", text: "Learning and training that can widen access to opportunity." },
-  { title: "Employment & skills", text: "Practical pathways that prepare young people for meaningful work." },
-  { title: "Environment", text: "Community action that supports cleaner, healthier public spaces." },
-  { title: "Waste management", text: "Better infrastructure, segregation and responsible collection." },
-  { title: "Community participation", text: "Local institutions and residents shaping lasting change together." },
+  { title: "Education & training", text: "Learning and practical training that help people build knowledge, confidence and opportunity." },
+  { title: "Employment generation", text: "Skills and pathways that can help young people prepare for meaningful livelihoods." },
+  { title: "Environmental protection", text: "Community action that supports cleaner, healthier neighbourhoods and public spaces." },
+  { title: "Waste management", text: "Better segregation, public infrastructure and responsible collection systems." },
+  { title: "Community engagement", text: "Residents, institutions and local organisations participating in lasting change." },
 ];
+
+export const affiliations = [{
+  name: "BharatBin Pvt. Ltd.",
+  type: "Associated organisation · Private limited company",
+  description: "An organisation working in waste-management innovation and research, associated with the development of the BharatBin initiative.",
+}];
 
 export const contact = {
   bharatBinEmail: "bharatbin@gmail.com",
@@ -27,10 +33,10 @@ export const contact = {
 };
 
 export const gallery = [
-  { src: "/images/installation-inspection.jpg", alt: "Community members and officials inspecting an installed BharatBin", caption: "Inspection during the South Delhi installation drive" },
-  { src: "/images/street-bin.jpg", alt: "BharatBin installed beside a public street", caption: "A dual-compartment BharatBin in a public setting" },
-  { src: "/images/three-bins.jpg", alt: "Three installed BharatBins with public awareness panels", caption: "Installed units carrying anti-plastic public awareness messages" },
-  { src: "/images/volunteers.jpg", alt: "Youth volunteers at a BharatBin programme event", caption: "Youth volunteers participating in the installation programme" },
-  { src: "/images/site-walk.jpg", alt: "Guests walking through a BharatBin installation site", caption: "Site walkthrough and programme review" },
-  { src: "/images/field-briefing.jpg", alt: "Press interaction beside a BharatBin", caption: "On-ground briefing during the installation event" },
+  { src: "/images/installation-inspection.jpg", alt: "Community members inspecting an installed BharatBin", caption: "Field inspection during the South Delhi installation programme" },
+  { src: "/images/street-bin.jpg", alt: "A dual-compartment BharatBin installed beside a public street", caption: "Installed wet-and-dry waste unit in a public setting" },
+  { src: "/images/three-bins.jpg", alt: "Three installed BharatBins with public-awareness panels", caption: "Installed units carrying anti-plastic awareness messages" },
+  { src: "/images/volunteers.jpg", alt: "Young volunteers at a BharatBin community programme", caption: "Young volunteers taking part in the programme" },
+  { src: "/images/site-walk.jpg", alt: "Participants walking through a BharatBin installation site", caption: "Site walkthrough during the installation programme" },
+  { src: "/images/field-briefing.jpg", alt: "An on-ground briefing beside an installed BharatBin", caption: "On-ground briefing at an installation site" },
 ];

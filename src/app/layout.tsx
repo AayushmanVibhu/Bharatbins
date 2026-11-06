@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import { SiteShell } from "@/components/SiteShell";
+import { siteUrl } from "@/data/content";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://helpindiafoundation.org"),
+  metadataBase: new URL(siteUrl),
   title: { default: "Help India Foundation", template: "%s | Help India Foundation" },
   description: "Help India Foundation works across education, skills, environmental protection and waste management through practical, community-focused initiatives.",
-  openGraph: { title: "Help India Foundation", description: "Community participation for a cleaner, more empowered India.", type: "website" },
+  alternates: { canonical: "/" },
+  openGraph: { title: "Help India Foundation", description: "Community-centred work in education, livelihoods, environmental protection and waste management.", type: "website", url: "/" },
+  twitter: { card: "summary", title: "Help India Foundation", description: "Community-centred work in education, livelihoods, environmental protection and waste management." },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
